@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Redrock Studio — Eğlenceli Mobil Oyunlar</title>
+<meta name="description" content="Redrock Studio, herkes için renkli ve bağımlılık yapan mobil oyunlar geliştiren bağımsız bir oyun stüdyosudur. BlastChain ve Forest Quest şimdi yayında!" />
+<meta name="theme-color" content="#FF5A3C" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Redrock Studio — Eğlenceli Mobil Oyunlar" />
+<meta property="og:description" content="BlastChain ve Forest Quest ile tanışın. App Store ve Google Play'de." />
+<meta property="og:image" content="assets/img/blastchain-poster.jpeg" />
+<meta property="og:type" content="website" />
+
+<link rel="icon" href="assets/img/redrock-logo.jpeg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- Decorative animated background -->
+<div class="bg-orbs" aria-hidden="true">
+  <span class="orb orb--1"></span>
+  <span class="orb orb--2"></span>
+  <span class="orb orb--3"></span>
+  <span class="orb orb--4"></span>
+</div>
+
+<!-- Progress bar -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- NAVBAR -->
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a href="#top" class="nav__brand" aria-label="Redrock Studio ana sayfa">
+      <img src="assets/img/redrock-logo.jpeg" alt="Redrock Studio logosu" class="nav__logo" />
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#games">Oyunlar</a>
+      <a href="#values">Nasıl Çalışırız</a>
+      <a href="#games" class="btn btn--sm btn--primary">Hemen Oyna</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="pill reveal" data-reveal>🎮 Bağımsız Mobil Oyun Stüdyosu</span>
+        <h1 class="hero__title reveal" data-reveal>
+          Cebine sığan
+          <span class="grad-text">koca bir eğlence.</span>
+        </h1>
+        <p class="hero__lead reveal" data-reveal>
+          Redrock Studio; renkli, hızlı ve bırakması zor mobil oyunlar yapar.
+          Bir kahve molası kadar kısa, ama bir hafta sonu kadar keyifli.
+        </p>
+        <div class="hero__cta reveal" data-reveal>
+          <a href="#games" class="btn btn--primary btn--lg">Oyunları Keşfet</a>
+          <a href="#values" class="btn btn--ghost btn--lg">Nasıl Çalışırız</a>
+        </div>
+        <div class="hero__stats reveal" data-reveal>
+          <div class="stat"><b data-count="2">0</b><span>Yayında oyun</span></div>
+          <div class="stat"><b data-count="2">0</b><span>Mağaza</span></div>
+          <div class="stat"><b data-count="60">0</b><span>FPS akıcılık</span></div>
+        </div>
+      </div>
+
+      <div class="hero__art" aria-hidden="true">
+        <div class="phone tilt" data-tilt>
+          <div class="phone__screen">
+            <img src="assets/img/blastchain-icon.jpeg" alt="" />
+          </div>
+          <div class="phone__notch"></div>
+        </div>
+        <img src="assets/img/forestquest-icon.png" alt="" class="float-icon float-icon--a" />
+        <img src="assets/img/blastchain-icon.jpeg" alt="" class="float-icon float-icon--b" />
+        <span class="spark spark--1">✦</span>
+        <span class="spark spark--2">✦</span>
+        <span class="spark spark--3">✦</span>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>BLASTCHAIN&nbsp;&nbsp;✦&nbsp;&nbsp;FOREST QUEST&nbsp;&nbsp;✦&nbsp;&nbsp;MATCH • BLAST • WIN&nbsp;&nbsp;✦&nbsp;&nbsp;REDROCK STUDIO&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+        <span>BLASTCHAIN&nbsp;&nbsp;✦&nbsp;&nbsp;FOREST QUEST&nbsp;&nbsp;✦&nbsp;&nbsp;MATCH • BLAST • WIN&nbsp;&nbsp;✦&nbsp;&nbsp;REDROCK STUDIO&nbsp;&nbsp;✦&nbsp;&nbsp;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAMES -->
+  <section class="section" id="games">
+    <div class="container">
+      <header class="section__head reveal" data-reveal>
+        <span class="pill">Oyunlarımız</span>
+        <h2>İndir, aç, kaybol.</h2>
+        <p>İki oyun, tek his: “Bir el daha oynayayım.”</p>
+      </header>
+
+      <!-- BlastChain -->
+      <article class="game reveal" data-reveal>
+        <div class="game__media">
+          <img src="assets/img/blastchain-poster.jpeg" alt="BlastChain oyun görseli" />
+          <div class="game__badge">Öne çıkan</div>
+        </div>
+        <div class="game__body">
+          <div class="game__title">
+            <img src="assets/img/blastchain-icon.jpeg" alt="BlastChain ikonu" class="game__icon" />
+            <div>
+              <h3>BlastChain</h3>
+              <p class="game__tag">Match &amp; Blast bulmaca</p>
+            </div>
+          </div>
+          <p class="game__desc">
+            Renkli blokları birleştir, zincirleme patlamalar başlat ve kombolarla
+            tabloyu havaya uçur. Kolay öğrenilir, ustalaşması yıllar sürer.
+          </p>
+          <ul class="game__feats">
+            <li>💥 Zincirleme kombo sistemi</li>
+            <li>🧩 Yüzlerce el yapımı bölüm</li>
+            <li>⚡ Tek elle, saniyeler içinde oyna</li>
+          </ul>
+          <div class="store-row">
+            <a class="store-btn" href="https://apps.apple.com/tr/app/blastchain-match-blast/id6760842437?l=tr" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.9c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.8-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.5-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.5 1.3-.1 1.8-.8 3.3-.8s2 .8 3.3.8c1.4 0 2.3-1.2 3.1-2.5.6-.9.9-1.4 1.4-2.4-3.6-1.4-4.1-6.7-.9-9-.6-1.6-1.7-2.9-3-3.6"/><path d="M14.5 5.4c.7-.9 1.2-2.1 1-3.4-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3.1-1.4"/></svg>
+              <span><small>İndir</small><strong>App Store</strong></span>
+            </a>
+            <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.blastchain&hl=tr" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3C3.3 2.6 3.1 3 3.1 3.6v16.8c0 .6.2 1 .5 1.3l.1.1L13 12.6v-.2L3.7 2.2z" fill="#00D4FF"/><path d="M16.3 15.9 13 12.6v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3z" fill="#FFCE00"/><path d="M16.4 15.8 13 12.5 3.6 21.9c.4.4 1 .4 1.7 0z" fill="#FF3B47"/><path d="M16.4 9.2 5.3 3c-.7-.4-1.3-.4-1.7 0L13 12.5z" fill="#00E676"/></svg>
+              <span><small>Şuradan al</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Forest Quest -->
+      <article class="game game--rev reveal" data-reveal>
+        <div class="game__media game__media--forest">
+          <img src="assets/img/forestquest-icon.png" alt="Forest Quest görseli" />
+        </div>
+        <div class="game__body">
+          <div class="game__title">
+            <img src="assets/img/forestquest-icon.png" alt="Forest Quest ikonu" class="game__icon" />
+            <div>
+              <h3>Forest Quest</h3>
+              <p class="game__tag">Çok oyunculu strateji</p>
+            </div>
+          </div>
+          <p class="game__desc">
+            Sıra tabanlı bir strateji düellosu. Yanında ki gerçek rakiplerle kapış
+            ya da farklı zorluk seviyelerindeki yapay zekaya meydan oku.
+            Her hamle oyunu çevirebilir.
+          </p>
+          <ul class="game__feats">
+            <li>⚔️ Yanında ki gerçek oyuncularla maçlar</li>
+            <li>🤖 Sana göre uyum sağlayan yapay zeka rakipler</li>
+            <li>🧠 Derin strateji, sade kontroller</li>
+          </ul>
+          <div class="store-row">
+            <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.forestquest&hl=tr" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 2.3C3.3 2.6 3.1 3 3.1 3.6v16.8c0 .6.2 1 .5 1.3l.1.1L13 12.6v-.2L3.7 2.2z" fill="#00D4FF"/><path d="M16.3 15.9 13 12.6v-.2l3.3-3.3.1.1 3.9 2.2c1.1.6 1.1 1.7 0 2.3z" fill="#FFCE00"/><path d="M16.4 15.8 13 12.5 3.6 21.9c.4.4 1 .4 1.7 0z" fill="#FF3B47"/><path d="M16.4 9.2 5.3 3c-.7-.4-1.3-.4-1.7 0L13 12.5z" fill="#00E676"/></svg>
+              <span><small>Şuradan al</small><strong>Google Play</strong></span>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section section--tint" id="values">
+    <div class="container">
+      <header class="section__head reveal" data-reveal>
+        <span class="pill">Nasıl çalışırız</span>
+        <h2>Üç basit kural.</h2>
+      </header>
+      <div class="cards">
+        <div class="card reveal" data-reveal>
+          <div class="card__ico">⚡</div>
+          <h3>Önce his</h3>
+          <p>Bir oyun ilk 10 saniyede iyi hissettirmiyorsa, mekaniği baştan kurarız.</p>
+        </div>
+        <div class="card reveal" data-reveal>
+          <div class="card__ico">🎨</div>
+          <h3>Renkli ve net</h3>
+          <p>Parlak paletler, okunaklı arayüz. Göz yormayan, davetkâr bir görsel dil.</p>
+        </div>
+        <div class="card reveal" data-reveal>
+          <div class="card__ico">🤝</div>
+          <h3>Oyuncuya saygı</h3>
+          <p>Adil ilerleme, saldırgan olmayan reklamlar, gizli maliyet yok.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container cta__inner reveal" data-reveal>
+      <h2>Sıra sende.</h2>
+      <p>BlastChain ve Forest Quest'i şimdi indir — ücretsiz.</p>
+      <div class="hero__cta">
+        <a href="https://play.google.com/store/apps/developer?id=RedRock+Studio&hl=tr" target="_blank" rel="noopener" class="btn btn--dark btn--lg">Google Play'de Tüm Oyunlarımız</a>
+        <a href="https://apps.apple.com/tr/app/blastchain-match-blast/id6760842437?l=tr" target="_blank" rel="noopener" class="btn btn--dark btn--lg">App Store</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/img/redrock-logo.jpeg" alt="Redrock Studio logosu" />
+      <p>Renkli mobil oyunlar üreten bağımsız stüdyo.</p>
+    </div>
+    <div class="footer__col">
+      <h4>Oyunlar</h4>
+      <a href="https://play.google.com/store/apps/details?id=com.blastchain&hl=tr" target="_blank" rel="noopener">BlastChain</a>
+      <a href="https://play.google.com/store/apps/details?id=com.forestquest&hl=tr" target="_blank" rel="noopener">Forest Quest</a>
+      <a href="https://play.google.com/store/apps/developer?id=RedRock+Studio&hl=tr" target="_blank" rel="noopener">Tüm oyunlarımız →</a>
+    </div>
+    <div class="footer__col">
+      <h4>Stüdyo</h4>
+      <a href="#games">Oyunlar</a>
+      <a href="#values">Nasıl çalışırız</a>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© <span id="year">2026</span> Redrock Studio. Tüm hakları saklıdır.</span>
+    <span>Sevgiyle yapıldı 🔴🪨</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -69,44 +69,15 @@
     });
   }
 
-  /* ---------- Count-up stats ---------- */
-  var counters = document.querySelectorAll("[data-count]");
-  function animateCount(el) {
-    var target = parseInt(el.getAttribute("data-count"), 10) || 0;
-    if (reduceMotion) { el.textContent = target; return; }
-    var start = 0, dur = 1400, t0 = null;
-    function step(ts) {
-      if (!t0) t0 = ts;
-      var p = Math.min((ts - t0) / dur, 1);
-      var eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(eased * target);
-      if (p < 1) requestAnimationFrame(step);
-    }
-    requestAnimationFrame(step);
-  }
-  if ("IntersectionObserver" in window) {
-    var cio = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          animateCount(entry.target);
-          cio.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.6 });
-    counters.forEach(function (el) { cio.observe(el); });
-  } else {
-    counters.forEach(function (el) { el.textContent = el.getAttribute("data-count"); });
-  }
-
-  /* ---------- Pointer tilt (hero phone) ---------- */
+  /* ---------- Pointer tilt (hero icons) ---------- */
   if (!reduceMotion && window.matchMedia("(pointer: fine)").matches) {
     document.querySelectorAll("[data-tilt]").forEach(function (el) {
       var rect;
       el.addEventListener("mouseenter", function () { rect = el.getBoundingClientRect(); });
       el.addEventListener("mousemove", function (e) {
         if (!rect) rect = el.getBoundingClientRect();
-        var rx = ((e.clientY - rect.top) / rect.height - 0.5) * -12;
-        var ry = ((e.clientX - rect.left) / rect.width - 0.5) * 12;
+        var rx = ((e.clientY - rect.top) / rect.height - 0.5) * -10;
+        var ry = ((e.clientX - rect.left) / rect.width - 0.5) * 10;
         el.style.transform = "perspective(900px) rotateX(" + rx + "deg) rotateY(" + ry + "deg)";
       });
       el.addEventListener("mouseleave", function () {
@@ -115,15 +86,17 @@
     });
   }
 
-  /* ---------- Parallax orbs ---------- */
-  if (!reduceMotion) {
-    var orbs = document.querySelectorAll(".orb");
-    window.addEventListener("scroll", function () {
-      var y = window.scrollY;
-      orbs.forEach(function (orb, i) {
-        var speed = (i + 1) * 0.03;
-        orb.style.marginTop = (y * speed) + "px";
+  /* ---------- Copy e-mail ---------- */
+  var copyBtn = document.getElementById("copyMail");
+  if (copyBtn && navigator.clipboard) {
+    var copyLabel = copyBtn.textContent;
+    copyBtn.addEventListener("click", function () {
+      navigator.clipboard.writeText(copyBtn.getAttribute("data-mail")).then(function () {
+        copyBtn.textContent = "Kopyalandı ✓";
+        setTimeout(function () { copyBtn.textContent = copyLabel; }, 1800);
       });
-    }, { passive: true });
+    });
+  } else if (copyBtn) {
+    copyBtn.hidden = true;
   }
 })();

@@ -24,12 +24,15 @@ Ya da `index.html` dosyasına çift tıkla.
 ├── index.html              # Tüm sayfa içeriği
 ├── assets/
 │   ├── css/style.css       # Tema, düzen, animasyonlar
-│   ├── js/main.js          # Scroll animasyonları, sayaçlar, menü
+│   ├── js/main.js          # Scroll animasyonları, menü, e-posta kopyalama
 │   └── img/
-│       ├── redrock-logo.jpeg
-│       ├── blastchain-icon.jpeg
-│       ├── blastchain-poster.jpeg
-│       └── forestquest-icon.png
+│       ├── redrock-logo.png    # şeffaf arka plan
+│       ├── favicon.png
+│       ├── blastchain-icon.jpg
+│       ├── blastchain-poster.jpeg  # og:image
+│       ├── forestquest-icon.jpg
+│       ├── risefc-icon.jpg
+│       └── globuzzle-icon.jpg
 ```
 
 ## Özelleştirme
@@ -40,12 +43,14 @@ Ya da `index.html` dosyasına çift tıkla.
 | Metinler | `index.html` |
 | Mağaza linkleri | `index.html` içinde `store-btn` ve footer bağlantıları |
 
-> Not: İletişim ve stüdyo bilgi bölümleri şimdilik siteden kaldırıldı.
+İletişim: osmnytkn02@gmail.com
 
 ## Oyun linkleri
 
 - **BlastChain** — [App Store](https://apps.apple.com/tr/app/blastchain-match-blast/id6760842437?l=tr) · [Google Play](https://play.google.com/store/apps/details?id=com.blastchain&hl=tr)
 - **Forest Quest** (çok oyunculu + yapay zekaya karşı strateji) — [Google Play](https://play.google.com/store/apps/details?id=com.forestquest&hl=tr)
+- **Rise FC Manager** (futbol menajerlik) — yakında
+- **Globuzzle** (dünya turu bulmaca) — yakında
 - **Tüm oyunlar / geliştirici sayfası** — [Google Play](https://play.google.com/store/apps/developer?id=RedRock+Studio&hl=tr)
 
 ## Yayınlama (GitHub Pages örneği)

@@ -22,9 +22,11 @@ Ya da `index.html` dosyasına çift tıkla.
 ```
 .
 ├── index.html              # Tüm sayfa içeriği
+├── gizlilik.html           # Gizlilik ve çerez bilgilendirmesi
 ├── assets/
 │   ├── css/style.css       # Tema, düzen, animasyonlar
 │   ├── js/main.js          # Scroll animasyonları, menü, e-posta kopyalama
+│   ├── fonts/              # Yerel yazı tipleri (Inter, Bricolage Grotesque; SIL OFL)
 │   └── img/
 │       ├── redrock-logo.png    # şeffaf arka plan
 │       ├── favicon.png
@@ -32,7 +34,8 @@ Ya da `index.html` dosyasına çift tıkla.
 │       ├── blastchain-poster.jpeg  # og:image
 │       ├── forestquest-icon.jpg
 │       ├── risefc-icon.jpg
-│       └── globuzzle-icon.jpg
+│       ├── globuzzle-icon.jpg
+│       └── henvasion-icon.jpg
 ```
 
 ## Özelleştirme
@@ -43,14 +46,17 @@ Ya da `index.html` dosyasına çift tıkla.
 | Metinler | `index.html` |
 | Mağaza linkleri | `index.html` içinde `store-btn` ve footer bağlantıları |
 
-İletişim: osmnytkn02@gmail.com
+İletişim: studioredr@gmail.com
+
+> `assets/` bir yıl önbelleğe alınır (`vercel.json`). CSS veya JS değişince HTML'deki `?v=` değerini artır.
 
 ## Oyun linkleri
 
-- **BlastChain** — [App Store](https://apps.apple.com/tr/app/blastchain-match-blast/id6760842437?l=tr) · [Google Play](https://play.google.com/store/apps/details?id=com.blastchain&hl=tr)
+- **BlastChain** — [App Store](https://apps.apple.com/tr/app/blastchain-match-blast/id6811445180?l=tr) · [Google Play](https://play.google.com/store/apps/details?id=com.blastchain&hl=tr)
 - **Forest Quest** (çok oyunculu + yapay zekaya karşı strateji) — [Google Play](https://play.google.com/store/apps/details?id=com.forestquest&hl=tr)
-- **Rise FC Manager** (futbol menajerlik) — yakında
+- **Rise FC Manager** (futbol menajerlik) — [App Store](https://apps.apple.com/tr/app/rise-fc-manager/id6811374192?l=tr) (yalnızca iOS)
 - **Globuzzle** (dünya turu bulmaca) — yakında
+- **Henvasion** (dikey arcade nişancı) — geliştiriliyor
 - **Tüm oyunlar / geliştirici sayfası** — [Google Play](https://play.google.com/store/apps/developer?id=RedRock+Studio&hl=tr)
 
 ## Yayınlama (GitHub Pages örneği)

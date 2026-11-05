@@ -6,8 +6,23 @@
     {
       "source": "/assets/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/gizlilik",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/gizlilik.html",
+      "destination": "/privacy",
+      "permanent": true
     }
   ]
 }

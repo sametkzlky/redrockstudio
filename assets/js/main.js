@@ -92,7 +92,7 @@
     var copyLabel = copyBtn.textContent;
     copyBtn.addEventListener("click", function () {
       navigator.clipboard.writeText(copyBtn.getAttribute("data-mail")).then(function () {
-        copyBtn.textContent = "Kopyalandı ✓";
+        copyBtn.textContent = "Copied ✓";
         setTimeout(function () { copyBtn.textContent = copyLabel; }, 1800);
       });
     });

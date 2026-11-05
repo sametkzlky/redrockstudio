@@ -22,7 +22,7 @@ Ya da `index.html` dosyasına çift tıkla.
 ```
 .
 ├── index.html              # Tüm sayfa içeriği
-├── gizlilik.html           # Gizlilik ve çerez bilgilendirmesi
+├── privacy.html            # Gizlilik ve çerez bilgilendirmesi
 ├── assets/
 │   ├── css/style.css       # Tema, düzen, animasyonlar
 │   ├── js/main.js          # Scroll animasyonları, menü, e-posta kopyalama
@@ -52,12 +52,12 @@ Ya da `index.html` dosyasına çift tıkla.
 
 ## Oyun linkleri
 
-- **BlastChain** — [App Store](https://apps.apple.com/tr/app/blastchain-match-blast/id6811445180?l=tr) · [Google Play](https://play.google.com/store/apps/details?id=com.blastchain&hl=tr)
-- **Forest Quest** (çok oyunculu + yapay zekaya karşı strateji) — [Google Play](https://play.google.com/store/apps/details?id=com.forestquest&hl=tr)
-- **Rise FC Manager** (futbol menajerlik) — [App Store](https://apps.apple.com/tr/app/rise-fc-manager/id6811374192?l=tr) (yalnızca iOS)
+- **BlastChain** — [App Store](https://apps.apple.com/app/blastchain-match-blast/id6811445180) · [Google Play](https://play.google.com/store/apps/details?id=com.blastchain)
+- **Forest Quest** (çok oyunculu + yapay zekaya karşı strateji) — [App Store](https://apps.apple.com/app/forest-quest-bagh-chal/id6818884950) · [Google Play](https://play.google.com/store/apps/details?id=com.forestquest)
+- **Rise FC Manager** (futbol menajerlik) — [App Store](https://apps.apple.com/app/rise-fc-manager/id6811374192) (yalnızca iOS)
 - **Globuzzle** (dünya turu bulmaca) — yakında
 - **Henvasion** (dikey arcade nişancı) — geliştiriliyor
-- **Tüm oyunlar / geliştirici sayfası** — [Google Play](https://play.google.com/store/apps/developer?id=RedRock+Studio&hl=tr)
+- **Tüm oyunlar / geliştirici sayfası** — [Google Play](https://play.google.com/store/apps/developer?id=RedRock+Studios)
 
 ## Yayınlama (GitHub Pages örneği)
 
